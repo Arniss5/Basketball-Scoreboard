@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'CursedTimerUlil-Aznm';
+    src: url('./Styles/CursedTimerUlil-Aznm.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F0F9FF;
+    background-color: #0C4A6E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-container {
+    padding-top: 1.5rem;
+}
+
+.container {
+    margin: 1% 5% 2% 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.container h3 {
+    font-size: 2.7rem;
+}
+
+.score {
+    font-family: 'CursedTimerUlil-Aznm', Verdana, Tahoma, sans-serif;
+    font-size: 90px;
+    line-height: 135px;
+    text-align: center;
+    color: #F43F5E;
+    background-color: black;
+    border-radius: 5px;
+    height: 120px;
+    min-width: 155px;
+    margin: 1.5rem 0;
+}
+
+.score-btn {
+    font-size: 1rem;
+    font-family: 'CursedTimerUlil-Aznm', Verdana, Tahoma, sans-serif;
+    color: #F0F9FF;
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #F0F9FF;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.score-btn:hover {
+    color: #0C4A6E;
+    background-color: #F0F9FF;
+    cursor: pointer;
+}
+
+#newgame {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    color: #F43F5E;
+    background-color: transparent;
+    width: 200px;
+    border: 3px solid #F43F5E;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+}
+
+#newgame:hover {
+    color: #0C4A6E;
+    background-color: #F43F5E;
+    cursor: pointer;
+}

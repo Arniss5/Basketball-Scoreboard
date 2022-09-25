@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div class="timer-container"><span id="timer">0</span> minute(s)</div>
+    <div class="container">
+      <div class="side">
+        <h3>HOME</h3>
+        <div class="score" id="home-score">0</div>
+        <div class="add-scores">
+          <button class="score-btn" id="home1" onclick="addScore(event)">
+            +1
+          </button>
+          <button class="score-btn" id="home2" onclick="addScore(event)">
+            +2
+          </button>
+          <button class="score-btn" id="home3" onclick="addScore(event)">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="side">
+        <h3>GUEST</h3>
+        <div class="score" id="guest-score">0</div>
+        <div class="add-scores">
+          <button class="score-btn" id="guest1" onclick="addScore(event)">
+            +1
+          </button>
+          <button class="score-btn" id="guest2" onclick="addScore(event)">
+            +2
+          </button>
+          <button class="score-btn" id="guest3" onclick="addScore(event)">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <button id="newgame" onclick="newGame()">NEW GAME</button>
+    <script src="app.js"></script>
+  </body>
+</html>
