@@ -28,11 +28,9 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-
 ### Screenshot
 
-![](./styles/preview.JPG)
-
+![](./styles/preview.jpg)
 
 ### Links
 
@@ -49,15 +47,15 @@ Users should be able to:
 - JavaScript
 - Based on [Figma design](https://www.figma.com/file/YC48MCx4frBFtYoz6rNJE6/Basketball-Scoreboard?node-id=107%3A195)
 
-
 ### What I learned
 
 With this project I practiced creating JS functions with conditionals.
 I explored new event listeners. I learned how to get an ID of clicked element. I created an interval.
 
 ```html
-<button class="score-btn" id="home1" onclick="addScore(event)">
+<button class="score-btn" id="home1" onclick="addScore(event)"></button>
 ```
+
 ```css
 @font-face {
     font-family: 'CursedTimerUlil-Aznm';
@@ -65,12 +63,13 @@ I explored new event listeners. I learned how to get an ID of clicked element. I
 }
 }
 ```
+
 ```js
 function startTimer() {
-    setInterval(function () {
-        timerCount += 1
-        timer.textContent = timerCount
-    }, 60000);
+  setInterval(function () {
+    timerCount += 1;
+    timer.textContent = timerCount;
+  }, 60000);
 }
 ```
 
@@ -78,28 +77,26 @@ function startTimer() {
 window.addEventListener('load', startTimer())
 }
 ```
+
 ```js
 function addScore(event) {
-    //check id of the clicked button and add respective points
-    if(event.target.id === "home1") {
-        homecount += 1
-    } else if(event.target.id === "home2")  {
-        homecount += 2
-    }
-//etc
+  //check id of the clicked button and add respective points
+  if (event.target.id === "home1") {
+    homecount += 1;
+  } else if (event.target.id === "home2") {
+    homecount += 2;
+  }
+  //etc
 }
 ```
-
 
 ### Continued development
 
 I will practice manipulating the DOM and creating more complex JS functions.
 
-
 ## Author
 
 - Website - [Arniss5](https://github.com/Arniss5)
-
 
 ## Acknowledgments
 
